@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, orange, purple, aqua);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 1000px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 40px; 
+    margin: 20px 0;
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#dogContainer img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#dogContainer img:hover {
+    transform: scale(1.05);
+}
+
+#dogMessage {
+    font-size: 19px;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+#ratingContainer {
+    margin: 15px 0;
+}
+
+.star {
+    font-size: 32px; 
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+
+#buttonContainer button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease-in-out;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buyBtn {
+    background-color: #ff6f61;
+}
+
+#seeOtherBtn {
+    background-color: #4caf50;
+}
+
+#buttonContainer button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+#giftSection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.giftBox img {
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.giftBox img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.giftMessage {
+    margin-top: 15px;
+    font-size: 24px; 
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+#userContainer {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    width: 800px; 
+    margin: 20px auto;
+}
+
+#userContainer h3 {
+    color: #333;
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+#userContainer p {
+    font-size: 18px; 
+    color: #555;
+    margin: 5px 0;
+}
+
+#userContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid #ff6f61;
+}
+
+
+@media (max-width: 768px) {
+    #dogContainer img {
+        width: 80%;
+    }
+
+    #userContainer {
+        width: 90%;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Picker with Gifts</title>
+    <link rel="stylesheet" href="dog.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            color: #343a40;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        #dogContainer img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .star {
+            font-size: 24px;
+            cursor: pointer;
+            color: gray;
+        }
+
+        #buttonContainer button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #buyBtn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        #seeOtherBtn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #giftSection {
+            margin-top: 20px;
+        }
+
+        .giftBox {
+            position: relative;
+            width: 150px;
+            margin: 20px auto;
+        }
+
+        .giftBox img {
+            width: 100%;
+        }
+
+        .giftMessage {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        #userContainer img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        #userContainer p {
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pick a Dog and Get a Gift 🎁</h1>
+    <div id="dogContainer">
+        <img id="dogImage" src="" alt="Random Dog">
+        <p id="dogMessage"></p>
+    </div>
+    
+    <div id="ratingContainer">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+
+    <div id="buttonContainer">
+        <button id="buyBtn">Buy This Dog!</button>
+        <button id="seeOtherBtn">See Another Dog</button>
+    </div>
+
+    <div id="giftSection">
+        <div class="giftBox" id="giftBox">
+            <img src="treasureclosed.jpg" alt="Gift Box" id="giftImage">
+        </div>
+        <div class="giftMessage" id="giftMessage"></div>
+    </div>
+
+    <div id="userContainer"></div>
+
+    <script src="dog.js"></script>
+    <body style="background: linear-gradient(to bottom right, orange, purple, aqua);">
+
+</body>
+</html>
